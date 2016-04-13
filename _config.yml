@@ -7,8 +7,8 @@ permalink:           pretty
 # Setup
 title:               API-Design
 tagline:             'Praxishandbuch für Java- und Webservice-Entwickler'
-url:                 http://kspichale.github.io/api-design-website
-baseurl:             http://kspichale.github.io/api-design-website
+url:                 http://api-design.de
+baseurl:             http://api-design.de
 #baseurl:             ''
 paginate:            5
 gems:                [jekyll-paginate]
