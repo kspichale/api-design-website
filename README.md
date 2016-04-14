@@ -5,8 +5,5 @@ This repository contains the source files of the website for the German book API
 
 # Instructions
 
-    $ jekyll build // Build static websites
+    $ jekyll build -jekyll build -d ../branch-gh-pages // Build static websites
     $ jekyll serve // Run locally (Change the baseurl to '' in the config file.)
-    
-    $ git add -f _site && git commit -m "foo bar"
-    $ git subtree push --prefix _site origin gh-pages
