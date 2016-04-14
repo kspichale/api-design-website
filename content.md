@@ -2,5 +2,4 @@
 layout: page
 title: Inhalt
 ---
-
-Informationen über den Inhalt des Buches
+An dieser Stelle werden Sie in Kürze Informationen zum Inhalt des Buches finden.

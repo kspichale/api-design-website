@@ -2,5 +2,4 @@
 layout: page
 title: Leseproben
 ---
-
-Links zu den Leseproben
+An dieser Stelle werden Sie in Kürze Links zu Leseproben finden. 
