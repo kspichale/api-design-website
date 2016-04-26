@@ -9,7 +9,7 @@ title:               API-Design
 tagline:             'Praxishandbuch für Java- und Webservice-Entwickler'
 #url:                 http://api-design.de
 baseurl:             http://api-design.de
-baseurl:             ''
+#baseurl:             ''
 paginate:            5
 gems:                [jekyll-paginate]
 paginate_path:       "blog/page:num"
