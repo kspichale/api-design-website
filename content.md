@@ -2,11 +2,11 @@
 layout: page
 title: Inhalt
 ---
-Das Buch ist in vier Teile, die wiederum aus mehreren Kapiteln bestehen, gegliedert und umfasst sowohl allgemeine Konzepte als auch konkrete Techniken und Best Practices für unterschiedliche APIs und Protokolle.
+Das Buch ist in vier große Teile, die wiederum aus mehreren Kapiteln bestehen, gegliedert und umfasst sowohl allgemeine Konzepte als auch konkrete Techniken und Best Practices für unterschiedliche APIs und Protokolle.
 
 ## Teil I: Grundlagen
 
-Das Buch beginnt mit wichtigen API-Grundlagen und geht auf die Bedeutung von wohlüberlegten benutzerorientierten APIs ein:
+Der erste Teil beginnt mit wichtigen API-Grundlagen und geht auf die Bedeutung von wohlüberlegten benutzerorientierten APIs ein:
 
 * **Kapitel 1: "Application Programming Interfaces – eine Einführung"** beschreibt die Geschichte, Zweck, Funktion und Bedeutung von APIs.
 * **Kapitel 2: "Qualitätsmerkmale"** sollten beim API-Design berücksichtigt werden. Die vorgestellten Merkmale sind die Voraussetzung für alle weiteren Designtechniken in diesem Buch.
