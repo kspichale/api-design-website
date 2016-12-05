@@ -433,5 +433,13 @@ a.pagination-item:hover {
   width: 25%;
   float: left;
   padding-right: 15px;
-  padding-top:5px;
+  padding-top: 5px;
+}
+
+.bookcover {
+  width: 35%;
+  float: left;
+  padding-right: 15px;
+  padding-top: 5px;
+  border-radius: 0;
 }
