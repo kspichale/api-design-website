@@ -9,7 +9,7 @@ Das Buch ist in vier große Teile, die wiederum aus mehreren Kapiteln bestehen, 
 Der erste Teil beginnt mit wichtigen API-Grundlagen und geht auf die Bedeutung von wohlüberlegten benutzerorientierten APIs ein:
 
 * **Kapitel 1: "Application Programming Interfaces – eine Einführung"** beschreibt die Geschichte, Zweck, Funktion und Bedeutung von APIs.
-* **Kapitel 2: "Qualitätsmerkmale"** sollten beim API-Design berücksichtigt werden. Die vorgestellten Merkmale sind die Voraussetzung für alle weiteren Designtechniken in diesem Buch.
+* **Kapitel 2:** [**"Qualitätsmerkmale"**](http://api-design.de/preview/Kapitel2.pdf) sollten beim API-Design berücksichtigt werden. Die vorgestellten Merkmale sind die Voraussetzung für alle weiteren Designtechniken in diesem Buch.
 * **Kapitel 3: "Allgemeines Vorgehen beim API-Design"** beschreibt, wie konkrete Beispiele, die die Benutzung der API in verschiedenen Szenarien zeigen, für den Entwurf eingesetzt werden können.
 
 ## Teil II: Java-APIs
@@ -25,7 +25,7 @@ Nach der allgemeinen Einführung geht es im zweiten Teil um objektorientierte Ja
 
 An dieser Stelle verlassen wir die Welt der Java-APIs und kommen zu den Remote-APIs, die primär zur Integration unterschiedlicher Systeme eingesetzt werden. Konkret geht es im dritten Teil um RESTful HTTP, SOAP-Webservices und Messaging-APIs:
 
-* **Kapitel 8: "Grundlagen RESTful HTTP"** führt in den Architekturstil REST ein und beschreibt dessen Grundprinzipien anhand von RESTful HTTP.
+* **Kapitel 8:** [**"Grundlagen RESTful HTTP"**](http://api-design.de/preview/Kapitel8.pdf) führt in den Architekturstil REST ein und beschreibt dessen Grundprinzipien anhand von RESTful HTTP.
 * **Kapitel 9: "Techniken für Web-APIs"** geht u.a. auf Ressoucendesign, Medientypen und Fehlerbehandlung ein.
 * **Kapitel 10: "SOAP-Webservices"** behandelt Designtechniken und geht auf Granularität, Message Exchange Patterns, Datentypen und Versionierung ein.
 * **Kapitel 11: "Messaging"** stellt Messaging als wichtige Alternative zur Integration und Aufrufverarbeitung vor. Neben einem umfassenden Anwendungsbeispiel werden verschiedene Protokolle und Produkte vorgestellt.
