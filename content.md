@@ -38,4 +38,4 @@ Der abschließende vierte Teil des Buches behandelt Querschnittsthemen wie Dokum
 * **Kapitel 13: "Caching"** kann insbesondere für die Performance von RESTful HTTP sehr wichtig sein.
 * **Kapitel 14: "Skalierbarkeit"** stellt die Grundlagen skalierbarer Systeme vor. In diesem Zusammenhang werden das CAP-Theorem, statuslose Kommunikation, Load Balancing und verschiedene Architekturvarianten diskutiert. 
 * **Kapitel 15: "Erweiterte Architekturthemen"** umfasst Consumer-Driven Contracts, „One size fits all“-APIs und andere Architekturthemen.
-* **Kapitel 16: "API-Management"** beschreibt zu guter Letzt die Architektur und Werkzeuge für das Veröffentlichen, Dokumentieren und Managen von APIs vor.
+* **Kapitel 16: "API-Management"** beschreibt zu guter Letzt das Veröffentlichen, Dokumentieren und Verwalten von APIs mit API-Management-Werkzeugen.
