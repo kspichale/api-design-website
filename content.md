@@ -2,15 +2,15 @@
 layout: page
 title: Inhalt
 ---
-Das Buch ist in vier große Teile, die wiederum aus mehreren Kapiteln bestehen, gegliedert und umfasst sowohl allgemeine Konzepte als auch konkrete Techniken und Best Practices für unterschiedliche APIs und Protokolle.
+Das Buch ist in vier große Teile und umfasst sowohl allgemeine Konzepte als auch konkrete Techniken und Best Practices für unterschiedliche APIs und Protokolle.
 
 ## Teil I: Grundlagen
 
 Der erste Teil beginnt mit wichtigen API-Grundlagen und geht auf die Bedeutung von wohlüberlegten benutzerorientierten APIs ein:
 
 * **Kapitel 1: "Application Programming Interfaces – eine Einführung"** beschreibt die Geschichte, Zweck, Funktion und Bedeutung von APIs.
-* **Kapitel 2:** [**"Qualitätsmerkmale"**](http://api-design.de/preview/Kapitel2.pdf) sollten beim API-Design berücksichtigt werden. Die vorgestellten Merkmale sind die Voraussetzung für alle weiteren Designtechniken in diesem Buch.
-* **Kapitel 3: "Allgemeines Vorgehen beim API-Design"** beschreibt, wie konkrete Beispiele, die die Benutzung der API in verschiedenen Szenarien zeigen, für den Entwurf eingesetzt werden können.
+* **Kapitel 2:** [**"Qualitätsmerkmale"**](http://api-design.de/preview/Kapitel2.pdf) beschreibt, welche Qualitätsmerkmale Sie beim API-Design berücksichtigen sollten. Dies ist die Basis für die später in diesem Buch vorgestellten Designtechniken.
+* **Kapitel 3: "Allgemeines Vorgehen beim API-Design"** beschreibt, wie einfach Sie mithilfe von Beispielen für verschiedenen Szenarien eine API entwerfen und überprüfen können.
 
 ## Teil II: Java-APIs
 
@@ -19,7 +19,7 @@ Nach der allgemeinen Einführung geht es im zweiten Teil um objektorientierte Ja
 * **Kapitel 4: "Ausprägungen"** beschreibt die vielfältigen objektorientierten APIs, die man in Bibliotheken, Frameworks und anderen Softwarekomponenten findet.
 * **Kapitel 5: "Grundlagen für Java-APIs"** stellt grundlegende Techniken und Best Practices für Java-APIs vor. Hierzu zählen codenahe Themen wie Command/Query Separation, Design für Vererbung, Verwendung von Interfaces und Exception Handling.
 * **Kapitel 6: "Fortgeschrittene Techniken für Java-APIs"** betrachtet Techniken, die größeren Einfluss auf die Architektur der Anwendung haben, dennoch aber zum API-Design zählen.
-* **Kapitel 7: "Kompatibilität von Java-APIs"** führt in das Thema Kompatibiliät ein. In diesem Zusammenhang werden theoretische Grundlagen und praktische Techniken vorgestellt.
+* **Kapitel 7: "Kompatibilität von Java-APIs"** führt in das Thema Kompatibilität ein. In diesem Zusammenhang werden theoretische Grundlagen und praktische Techniken vorgestellt.
 
 ## Teil III: Remote-APIs
 
