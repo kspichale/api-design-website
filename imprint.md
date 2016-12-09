@@ -2,7 +2,7 @@
 layout: page
 ---
 # Impressum
-Die externen Links auf dieser Website führen zu fremden Seiten. Durch Anklicken des Links kommen Sie automatisch auf die fremde Seite. Aus rechtlichen Gründen weise ich Sie darauf hin, dass ich keinerlei Einfluss auf Inhalt und Gestaltung der verlinkten Websites habe. Meinungen, Darstellungen oder Äußerungen jedweder Art auf den verlinkten Seiten stellen nicht meine, sondern die des jeweiligen Inhabers der verlinkten Website dar.
+Die Website des API-Buches enthält auch Links und Verweise auf Websiteangebote Dritter. Die Verantwortung für diese fremden Inhalte liegt ausschließlich bei dem Anbieter, der diese Inhalte bereithält. Den Nutzerinnen und Nutzern der Website des API-Buches wird mit diesen Links allein der Zugang zu diesen Angeboten vermittelt. Für rechtswidrige, fehlerhafte oder unvollständige Inhalte sowie für Schäden, die aus der Nutzung dieser Websites entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde.
 
 Verantwortlich für diese Website:
 
