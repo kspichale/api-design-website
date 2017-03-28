@@ -89,6 +89,8 @@ Auf **Seite 159** wurde in der Tabelle die Bedeutung von next und previous verta
 
 Auf **Seite 167** und **Seite 168** wird zur Aktualisierung der erzeugten Ressourcen POST genannt, weil damit beliebige Verarbeitungen angestoßen werden können. Für Aktualisierungen wäre jedoch auch idempotente PUT-Aufrufe ausreichend.
 
+Auf **Seite 170** wurde in der Abbildung 9-6 'Colleciton' falsch geschrieben.
+
 Auf **Seite 174** steht fälschlicherweise hinter %20 ein 's'.
 
 Auf **Seite 190** wird als Beispiel für den Statuscode 204 ein erfolgreicher DELETE-Aufruf genannt. Für nachfolgende Anrufe der gelöschten Ressource sollte jedoch besser der Statuscode 410 Gone verwendet werden. Ein anderes Beispiel für die Verwendung von Statuscode 204 ist ein erfolgreich durchgeführter PUT-Aufruf, dessen Antwort keine Entität enthält.
