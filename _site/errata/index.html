@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Errata &middot; API-Design
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="http://api-design.de/public/css/poole.css">
+  <link rel="stylesheet" href="http://api-design.de/public/css/syntax.css">
+  <link rel="stylesheet" href="http://api-design.de/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://api-design.de/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://api-design.de/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="http://api-design.de/">Home</a>
+    <a class="sidebar-nav-item" href="http://api-design.de/content/">Inhalt</a>
+    <a class="sidebar-nav-item" href="http://api-design.de/author/">Autor</a>
+    <a class="sidebar-nav-item" href="http://api-design.de/preview/">Leseproben</a>
+    <a class="sidebar-nav-item" href="http://api-design.de/errata/">Errata</a>
+    <a class="sidebar-nav-item" href="http://api-design.de/imprint/">Impressum &amp; Kontakt</a>
+  </nav>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="http://api-design.de/" title="Home">API-Design</a>
+            <small>Praxishandbuch für Java- und Webservice-Entwickler</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">Errata</h1>
+  <p>Wenn Sie einen Fehler im Buch finden, können Sie mir diesen gerne per E-Mail an <a href="mailto:kai.spichale@api-design.de">kai.spichale@api-design.de</a> schicken. Ich bemühe mich, die Fehler an dieser Stelle aktuell zu halten und vor dem nächten Druck zu korrigieren.</p>
+
+<h2 id="1-auflage-druck-2016">1. Auflage, Druck 2016</h2>
+<p>Die folgenden Fehler wurde bereits im Nachdruck 2017 korrigiert.</p>
+
+<p>Ich bedanke mich bei Prof. Dr. Dominik Gruntz für sein umfangreiches Feedback.</p>
+
+<h3 id="kapitel-3">Kapitel 3</h3>
+
+<p>Auf <strong>Seite 30</strong> findet man im Quelltextbeispiel die Methode <em>create()</em>, die korrekterweise <em>build()</em> hätte heißen müssen.</p>
+
+<h3 id="kapitel-5">Kapitel 5</h3>
+
+<p>Auf <strong>Seite 69</strong> ist das Quellcodebeispiel unvollständig, denn es fehlt der Rückgabewert im Fall einer Exception. Als Rückgabewert eignet sich <em>null</em> oder eine leere Liste, wie dies hier gezeigt ist. Die leere Liste wird bevorzugt, weil sie hilft, NullPointerExceptions beim Aufrufer der Methode zu vermeiden.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>public List&lt;Bookings&gt; getBookings() {
+	try {
+		// ...
+	} catch (IOException|SQLException ex) {
+		logger.log(ex);
+		return Collections.emptyList();
+	}
+}
+</code></pre>
+</div>
+
+<p>Auf <strong>Seite 80</strong> wird fälschlicherweise behauptet, das Unterbinden von Vererbung hieße bei Java “Sealing”. In der <a href="https://docs.oracle.com/javase/tutorial/deployment/jar/sealman.html">offiziellen Dokumentation</a> wird der Begriff jedoch nur für Packages verwendet, die vollständig innerhalb derselben JAR-Datei liegen müssen. Der Begriff Sealing, wie er im API-Buch verwendet wird, ist aber dennoch nicht unüblich.</p>
+
+<h3 id="kapitel-6">Kapitel 6</h3>
+
+<p>Auf <strong>Seite 97</strong> ist der Name des Future-Objektes im unteren Quellcodebeispiel falsch. Das Beispiel müsste folgendermaßen lauten:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>int result = handle.get(5, TimeUnit.SECONDS);
+</code></pre>
+</div>
+
+<p>Auch auf <strong>Seite 98</strong> ist der Name des Future-Objektes im oberen Quellcodebeispiel falsch. Das Beispiel müsste folgendermaßen lauten:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>boolean isDone = handle.isDone();
+</code></pre>
+</div>
+
+<p>Auf <strong>Seite 99</strong> steht, dass das Projekt http://immutables.github.io bereits erwähnt wurde. Das Projekt wird jedoch erst auf Seite 112 vorgestellt.</p>
+
+<p>Auf <strong>Seite 117</strong> ist das Quellcodebeispiel falsch, korrekt wäre:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>public class ThisEscape {
+	private State[] states = new State[] {
+		new State(...), ...
+	};
+	
+	public ThisEscape (Collection&lt;ThisEscape&gt; register) {
+		register.add(this);
+		// weitere Initialisierung
+	}
+	
+	public State[] getStates() {
+		return states;
+	}
+}
+</code></pre>
+</div>
+
+<h3 id="kapitel-7">Kapitel 7</h3>
+
+<p>Auf <strong>Seite 127</strong> wird die Annotation @Deprecated genannt, jedoch fälschlicherweise kleingeschrieben. Dieser kleine Unterschied ist wichtig, denn @deprecated ist ein Tag von JavaDoc, das aber an dieser Stelle nicht gemeint ist.</p>
+
+<p>Auf <strong>Seite 129</strong> ist das Quellcodebeispiel falsch. Der korrigierte Quellcode für die Klasse <em>Shape</em> lautet:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>public Shape extends AbstractShape implements Drawable {
+	public static void main(String[] args) {
+		Shape s = new Shape();
+		System.out.println(s.identifyMyself());
+	}
+}	
+</code></pre>
+</div>
+
+<p>Auf <strong>Seite 134</strong> steht fälschlicherweise geschrieben, dass das Interface java.util.Iterator um die Methode <em>remove</em> erweitert wurde. Diese Aussage ist falsch, denn die Methode gibt es bereits seit Version 1.2. Mit Java 8 wurde der Methode lediglich eine Default-Implementierung spendiert, um zukünftige Implementierungen des Interfaces zu vereinfachen.</p>
+
+<h3 id="kapitel-8">Kapitel 8</h3>
+
+<p>Auf <strong>Seite 153</strong> steht fälschlicherweise, dass ein Client bei HTTP PUT mithilfe eines Location-Headers die URI der neuen Ressource bestimmt. Vielmehr wird bei PUT die URI mithilfe der URL der Ressource, auf der das PUT ausgeführt wird, definiert. Der Location-Header identifiziert die Ressource nach einem POST.</p>
+
+<p>Auf <strong>Seite 159</strong> wurde in der Tabelle die Bedeutung von next und previous vertauscht.</p>
+
+<h3 id="kapitel-9">Kapitel 9</h3>
+
+<p>Auf <strong>Seite 167</strong> und <strong>Seite 168</strong> wird zur Aktualisierung der erzeugten Ressourcen POST genannt, weil damit beliebige Verarbeitungen angestoßen werden können. Für Aktualisierungen wäre jedoch auch idempotente PUT-Aufrufe ausreichend.</p>
+
+<p>Auf <strong>Seite 170</strong> wurde in der Abbildung 9-6 ‘Colleciton’ falsch geschrieben.</p>
+
+<p>Auf <strong>Seite 174</strong> steht fälschlicherweise hinter %20 ein ‘s’.</p>
+
+<p>Auf <strong>Seite 190</strong> wird als Beispiel für den Statuscode 204 ein erfolgreicher DELETE-Aufruf genannt. Für nachfolgende Anrufe der gelöschten Ressource sollte jedoch besser der Statuscode 410 Gone verwendet werden. Ein anderes Beispiel für die Verwendung von Statuscode 204 ist ein erfolgreich durchgeführter PUT-Aufruf, dessen Antwort keine Entität enthält.</p>
+
+<h3 id="kapitel-10">Kapitel 10</h3>
+
+<p>Auf <strong>Seite 213</strong> gibt es einen Platzhalter im Text, der nicht ersetzt wurde. Die Klammerbemerkung (Latest SOAP versions) müsste entfernt werden.</p>
+
+<p>Auf <strong>Seite 216</strong> in der Abbildung 10-1 fehlt eine Pfeilspitze bei der Referenz von <em>binding</em> auf <em>portType</em>.</p>
+
+<h3 id="kapitel-11">Kapitel 11</h3>
+
+<p>Auf Seite <strong>248</strong> müsste der zweite Absatz folgendermaßen beginnen: “Im dritten und vierten Fall werden Transaktionen mit Funktionen wie Commit und Rollback, ähnlich wie bei JDBC, eingesetzt.”</p>
+
+<h3 id="kapitel-15">Kapitel 15</h3>
+
+<p>Auf <strong>Seite 313</strong> ist das Akronym falsch. Es heißt korrekterweise “YAGNI”.</p>
+
+<p>Auf <strong>Seite 315</strong> ist dieser Satz sprachlich falsch: “Dieses Beispiel zeigt einen Komponententest gezeigt.”</p>
+
+<h3 id="kapitel-16">Kapitel 16</h3>
+
+<p>Auf <strong>Seite 326</strong> heißt es: “Zur Beschreibung von APIs eignen sich spezielle Dokumentations- und Modellierungssprachen, die in Kapitel 12 genauer vorgestellt werden.” Der Satz müsste korrekt lauten: “Zur Beschreibung von APIs eignen sich spezielle Dokumentations- und Modellierungssprachen, die in Kapitel 12 genauer vorgestellt wurden.”</p>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
