@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="http://api-design.de/public/css/poole.css">
   <link rel="stylesheet" href="http://api-design.de/public/css/syntax.css">
   <link rel="stylesheet" href="http://api-design.de/public/css/lanyon.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://api-design.de/public/apple-touch-icon-precomposed.png">
@@ -76,7 +75,7 @@
 
 <p>Auf <strong>Seite 69</strong> ist das Quellcodebeispiel unvollständig, denn es fehlt der Rückgabewert im Fall einer Exception. Als Rückgabewert eignet sich <em>null</em> oder eine leere Liste, wie dies hier gezeigt ist. Die leere Liste wird bevorzugt, weil sie hilft, NullPointerExceptions beim Aufrufer der Methode zu vermeiden.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public List&lt;Bookings&gt; getBookings() {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public List&lt;Bookings&gt; getBookings() {
 	try {
 		// ...
 	} catch (IOException|SQLException ex) {
@@ -84,8 +83,7 @@
 		return Collections.emptyList();
 	}
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Auf <strong>Seite 80</strong> wird fälschlicherweise behauptet, das Unterbinden von Vererbung hieße bei Java “Sealing”. In der <a href="https://docs.oracle.com/javase/tutorial/deployment/jar/sealman.html">offiziellen Dokumentation</a> wird der Begriff jedoch nur für Packages verwendet, die vollständig innerhalb derselben JAR-Datei liegen müssen. Der Begriff Sealing, wie er im API-Buch verwendet wird, ist aber dennoch nicht unüblich.</p>
 
@@ -93,21 +91,19 @@
 
 <p>Auf <strong>Seite 97</strong> ist der Name des Future-Objektes im unteren Quellcodebeispiel falsch. Das Beispiel müsste folgendermaßen lauten:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>int result = handle.get(5, TimeUnit.SECONDS);
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int result = handle.get(5, TimeUnit.SECONDS);
+</code></pre></div></div>
 
 <p>Auch auf <strong>Seite 98</strong> ist der Name des Future-Objektes im oberen Quellcodebeispiel falsch. Das Beispiel müsste folgendermaßen lauten:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>boolean isDone = handle.isDone();
-</code></pre>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>boolean isDone = handle.isDone();
+</code></pre></div></div>
 
 <p>Auf <strong>Seite 99</strong> steht, dass das Projekt http://immutables.github.io bereits erwähnt wurde. Das Projekt wird jedoch erst auf Seite 112 vorgestellt.</p>
 
 <p>Auf <strong>Seite 117</strong> ist das Quellcodebeispiel falsch, korrekt wäre:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public class ThisEscape {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class ThisEscape {
 	private State[] states = new State[] {
 		new State(...), ...
 	};
@@ -121,8 +117,7 @@
 		return states;
 	}
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="kapitel-7">Kapitel 7</h3>
 
@@ -130,14 +125,13 @@
 
 <p>Auf <strong>Seite 129</strong> ist das Quellcodebeispiel falsch. Der korrigierte Quellcode für die Klasse <em>Shape</em> lautet:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>public Shape extends AbstractShape implements Drawable {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public Shape extends AbstractShape implements Drawable {
 	public static void main(String[] args) {
 		Shape s = new Shape();
 		System.out.println(s.identifyMyself());
 	}
 }	
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Auf <strong>Seite 134</strong> steht fälschlicherweise geschrieben, dass das Interface java.util.Iterator um die Methode <em>remove</em> erweitert wurde. Diese Aussage ist falsch, denn die Methode gibt es bereits seit Version 1.2. Mit Java 8 wurde der Methode lediglich eine Default-Implementierung spendiert, um zukünftige Implementierungen des Interfaces zu vereinfachen.</p>
 
