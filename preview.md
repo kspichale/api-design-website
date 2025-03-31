@@ -3,8 +3,6 @@ layout: page
 title: Leseproben
 ---
 
-[Inhaltsverzeichnis](https://www.dpunkt.de/common/leseproben//12326/2_Inhaltsverzeichnis.pdf)
+Der dpunkt.verlag hat einen Auszug aus dem Buch veröffentlicht.
 
-[Kapitel 2: "Qualitätsmerkmale"](https://www.dpunkt.de/common/leseproben//12326/3_Kapitel%202.pdf)
-
-[Kapitel 8: "Grundlagen RESTful HTTP"](https://www.dpunkt.de/common/leseproben//12326/4_Kapitel%208.pdf)
+[Kapitel 1 und 2](https://www.assets.dpunkt.de/leseproben/14167/Leseprobe.pdf)

@@ -9,7 +9,7 @@ Das Buch ist in vier große Teile und umfasst sowohl allgemeine Konzepte als auc
 Der erste Teil beginnt mit wichtigen API-Grundlagen und geht auf die Bedeutung von wohlüberlegten benutzerorientierten APIs ein:
 
 * **Kapitel 1: "Application Programming Interfaces – eine Einführung"** beschreibt die Geschichte, Zweck, Funktion und Bedeutung von APIs.
-* **Kapitel 2:** [**"Qualitätsmerkmale"**](https://www.dpunkt.de/common/leseproben//12326/3_Kapitel%202.pdf) beschreibt, welche Qualitätsmerkmale Sie beim API-Design berücksichtigen sollten. Dies ist die Basis für die später in diesem Buch vorgestellten Designtechniken.
+* **Kapitel 2: "Qualitätsmerkmale"** beschreibt, welche Qualitätsmerkmale Sie beim API-Design berücksichtigen sollten. Dies ist die Basis für die später in diesem Buch vorgestellten Designtechniken.
 * **Kapitel 3: "Allgemeines Vorgehen beim API-Design"** beschreibt, wie einfach Sie mithilfe von Beispielen für verschiedenen Szenarien eine API entwerfen und überprüfen können.
 
 ## Teil II: Java-APIs
@@ -25,7 +25,7 @@ Nach der allgemeinen Einführung geht es im zweiten Teil um objektorientierte Ja
 
 An dieser Stelle verlassen wir die Welt der Java-APIs und kommen zu den Remote-APIs, die primär zur Integration unterschiedlicher Systeme eingesetzt werden. Konkret geht es im dritten Teil um RESTful HTTP, SOAP-Webservices und Messaging-APIs:
 
-* **Kapitel 8:** [**"Grundlagen RESTful HTTP"**](https://www.dpunkt.de/common/leseproben//12326/4_Kapitel%208.pdf) führt in den Architekturstil REST ein und beschreibt dessen Grundprinzipien anhand von RESTful HTTP.
+* **Kapitel 8:** "Grundlagen RESTful HTTP"** führt in den Architekturstil REST ein und beschreibt dessen Grundprinzipien anhand von RESTful HTTP.
 * **Kapitel 9: "Techniken für Web-APIs"** geht u.a. auf Ressoucendesign, Medientypen und Fehlerbehandlung ein.
 * **Kapitel 10: "SOAP-Webservices"** behandelt Designtechniken und geht auf Granularität, Message Exchange Patterns, Datentypen und Versionierung ein.
 * **Kapitel 11: "Messaging"** stellt Messaging als wichtige Alternative zur Integration und Aufrufverarbeitung vor. Neben einem umfassenden Anwendungsbeispiel werden verschiedene Protokolle und Produkte vorgestellt.
